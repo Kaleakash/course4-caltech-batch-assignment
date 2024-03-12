@@ -8,7 +8,7 @@ public class SimpleController {
 	
 	@GetMapping(value = "/")
 	public String sayHello() {
-		String msg=  "<div style='color:red'>Welcome DrShawn pet clinic</div>";
+		String msg=  "<div style='color:red'>Welcome DrShawn pet clinic. This appliatication develop using spring boot</div>";
 		return msg;
 	}
 }
