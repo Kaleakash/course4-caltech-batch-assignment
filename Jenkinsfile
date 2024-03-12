@@ -19,8 +19,8 @@ pipeline {
         }
         stage("run the container"){
             steps{
-            	sh "docker rm 40f44c80632e -f"
-                sh "docker run -d -p 9090:9090 my-spring-app"
+            	sh "docker rm spring-container -f"
+                sh "docker run -d -p 9090:9090 --name=spring-container my-spring-app"
                 echo "container running"
             }
         }
