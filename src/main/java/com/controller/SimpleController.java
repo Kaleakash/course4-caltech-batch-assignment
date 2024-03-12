@@ -8,6 +8,7 @@ public class SimpleController {
 	
 	@GetMapping(value = "/")
 	public String sayHello() {
-		return "Welcome to Spring boot with rest api develop in EC2 using Jenkin by Akash";
+		String msg=  "<div style='color:red'>Welcome DrShawn pet clinic</div>";
+		return msg;
 	}
 }
